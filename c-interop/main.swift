@@ -4,8 +4,8 @@ putNum(31)
 
 print(String.fromCString(getString()))
 
-var a = "String from Swift"
+var str = "String from Swift"
 
-a.withCString { cs in
-   putString(cs)
+str.withCString { cstr in
+   putString(cstr)
 };
