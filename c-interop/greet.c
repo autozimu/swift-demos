@@ -15,5 +15,5 @@ char* getString() {
 }
 
 void putString(const char* s) {
-    printf("%s", s);
+    printf("%s\n", s);
 }
