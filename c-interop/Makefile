@@ -1,9 +1,12 @@
-main: greet.h greet.o main.swift
-	swiftc -import-objc-header $^
+main: main.swift greet.h
+	swiftc -import-objc-header greet.h \
+		main.swift \
+		-L. -lgreet
 
-greet.o: greet.c greet.h
-	clang -c $<
+libgreet.dylib: greet.c greet.h
+	clang -dynamiclib $< -o libgreet.dylib
 
 clean:
-	rm -rf greet.o
+	rm -rf libgreet.dylib
 	rm -rf main
+	rm -rf a.out
