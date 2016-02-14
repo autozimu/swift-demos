@@ -9,3 +9,5 @@ var str = "String from Swift"
 str.withCString { cstr in
    putString(cstr)
 };
+
+print(CCONST)
