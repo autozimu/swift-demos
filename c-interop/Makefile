@@ -1,4 +1,4 @@
-main: main.swift greet.h
+main: main.swift greet.h libgreet.dylib
 	swiftc -import-objc-header greet.h \
 		main.swift \
 		-L. -lgreet
