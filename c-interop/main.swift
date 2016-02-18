@@ -11,3 +11,6 @@ str.withCString { cstr in
 };
 
 print(CCONST)
+// print(CCONSTDEP) // compile error, cannot resolve
+
+print(String.fromCString(cStaticFunction()))
