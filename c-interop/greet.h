@@ -12,6 +12,6 @@ void putString(const char* s);
 // `define`.
 #define CCONSTDEP (CCONST * 2 + 1)
 
-static char* cStaticFunction() {
+static inline char* cStaticFunction() {
     return "String from C static function";
 }
