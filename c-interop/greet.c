@@ -17,3 +17,7 @@ char* getString() {
 void putString(const char* s) {
     printf("%s\n", s);
 }
+
+void functionThatNeedsAPointer(int *i) {
+    *i = 43;
+}

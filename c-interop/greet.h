@@ -4,7 +4,7 @@ void putNum(int n);
 
 char* getString();
 
-void putString(const char* s);
+void putString(const char *s);
 
 #define CCONST 7
 
@@ -15,3 +15,5 @@ void putString(const char* s);
 static inline char* cStaticFunction() {
     return "String from C static function";
 }
+
+void functionThatNeedsAPointer(int *i);
