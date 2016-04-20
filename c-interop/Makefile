@@ -1,12 +1,12 @@
-main: main.swift greet.h libgreet.dylib
+main: main.swift greet.h libgreet.so
 	swiftc -import-objc-header greet.h \
 		main.swift \
 		-L. -lgreet
 
-libgreet.dylib: greet.c greet.h
-	clang -dynamiclib $< -o libgreet.dylib
+libgreet.so: greet.c
+	clang -fPIC -shared  $< -o libgreet.so
 
 clean:
-	rm -rf libgreet.dylib
+	rm -rf libgreet.so
 	rm -rf main
 	rm -rf a.out

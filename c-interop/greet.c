@@ -7,11 +7,11 @@ int getNum() {
 }
 
 void putNum(int n) {
-    printf("get number from Swift: %d\n", n);
+    printf("number from Swift to C: %d\n", n);
 }
 
 char* getString() {
-    return "string from C";
+    return "string from C to Swift";
 }
 
 void putString(const char* s) {

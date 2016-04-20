@@ -6,6 +6,8 @@ char* getString();
 
 void putString(const char *s);
 
+char name[] = "IAmAString";
+
 #define CCONST 7
 
 // This `define` cannot be accessed from Swift, as it depends on another
@@ -17,3 +19,20 @@ static inline char* cStaticFunction() {
 }
 
 void functionThatNeedsAPointer(int *i);
+
+struct CStruct {
+    int value;
+    int anotherValue;
+};
+
+enum ConnectionError {
+    ConnectionErrorCouldNotConnect = 0,
+    ConnectionErrorDisconnected = 1,
+    ConnectionErrorResetByPeer = 2
+};
+
+union TestUnion {
+    int i;
+    float f;
+    unsigned char asChar[4];
+};
