@@ -4,6 +4,6 @@ import FooTestSuite
 
 var tests = [XCTestCaseEntry]()
 
-tests += FooTestSuite.allTests()
+tests += FooTestSuite.allTests
 
 XCTMain(tests)

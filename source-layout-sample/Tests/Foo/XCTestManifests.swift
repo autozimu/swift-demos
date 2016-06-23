@@ -1,9 +1,7 @@
 import XCTest
 
 #if !os(OSX)
-public func allTests() -> [XCTestCaseEntry] {
-    return [
-        testCase(FooTests.allTests)
-    ]
-}
+public let allTests = [
+    testCase(FooTests.allTests)
+]
 #endif
