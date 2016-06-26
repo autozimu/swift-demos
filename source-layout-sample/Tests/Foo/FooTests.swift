@@ -6,9 +6,7 @@ class FooTests: XCTestCase {
         XCTAssertEqual(foo(), "foo")
     }
 
-#if !os(OSX)
     static let allTests = [
         ("testFoo", testFoo)
     ]
-#endif
 }
