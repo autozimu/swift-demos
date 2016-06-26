@@ -4,4 +4,4 @@ matrix:
       osx_image: xcode8
 
 script:
-  - swift --version
+  - cd ./source-layout-sample && swift build && swift test
