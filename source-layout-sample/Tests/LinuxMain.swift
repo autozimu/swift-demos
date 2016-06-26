@@ -1,5 +1,5 @@
 import XCTest
-import FooTestSuite
+@testable import FooTestSuite
 
 XCTMain([
     testCase(FooTests.allTests),
