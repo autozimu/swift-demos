@@ -5,12 +5,13 @@ matrix:
       sudo: required
       language: generic
     - os: osx
-      osx_image: xcode7.3
-      language: generic
+      osx_image: xcode7.2
+env:
+  - SWIFT_VERSION=swift-DEVELOPMENT-SNAPSHOT-2016-06-20-a
 install:
-  - source ./.travis-install-swift.sh
+  - eval "$(curl -sL https://gist.githubusercontent.com/kylef/5c0475ff02b7c7671d2a/raw/9f442512a46d7a2af7b850d65a7e9bd31edfb09b/swiftenv-install.sh)"
 cache:
   directories:
-    - $HOME/.swift
+    - $HOME/.swiftenv
 script:
   - cd ./source-layout-sample && swift build && swift test
