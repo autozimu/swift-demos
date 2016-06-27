@@ -2,7 +2,7 @@
 
 set -ev
 
-if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then
+if [[ "$TRAVIS_OS_NAME" == "linux" ]] && [[ ! -d "$HOME/.swift"  ]] ; then
     pushd ${PWD}
     mkdir -p $HOME/.swift
     export SWIFT_VERSION=swift-DEVELOPMENT-SNAPSHOT-2016-06-20-a
