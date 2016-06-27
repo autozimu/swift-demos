@@ -3,7 +3,7 @@
 set -ev
 
 if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then
-    pushd
+    pushd ${PWD}
     cd ..
     export SWIFT_VERSION=swift-3.0-preview-1
     wget
