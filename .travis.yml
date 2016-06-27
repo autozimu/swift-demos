@@ -1,7 +1,7 @@
 os:
   - linux
   - osx
-language: generic
+language: generic # default to ruby
 sudo: required
 dist: trusty
 osx_image: xcode8
