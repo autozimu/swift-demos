@@ -15,7 +15,7 @@ if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then
         rm ${PKG}
         popd
     fi
-    export PATH=$HOME/.swift/${VERSION}-ubuntu14.04/usr/bin:$PATH
+    export PATH=$HOME/.swift/${SWIFT_VERSION}-ubuntu14.04/usr/bin:$PATH
 elif [[ "$TRAVIS_OS_NAME" == "osx" ]]; then
     PKG=${SWIFT_VERSION}-osx.pkg
     if [[ ! -d "$HOME/.swift/${PKG}" ]]; then
