@@ -5,6 +5,6 @@ dist: trusty
 sudo: required
 osx_image: xcode8
 install:
-    - . ./.travis-install-swift.sh
+    - ./.travis-install-swift.sh
 script:
   - cd ./source-layout-sample && swift build && swift test
