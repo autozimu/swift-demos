@@ -2,6 +2,10 @@ matrix:
   include:
     - os: osx
       osx_image: xcode8
-
+    - os: linux
+      dist: trusty
+      sudo: required
+install:
+    - . ./.travis-install-swift.sh
 script:
   - cd ./source-layout-sample && swift build && swift test
