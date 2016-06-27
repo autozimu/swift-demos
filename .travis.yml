@@ -1,7 +1,10 @@
-os: linux
+os:
+  - linux
+  - osx
 dist: trusty
 sudo: required
 language: generic # default to ruby
+osx_image: xcode8
 install:
   - source ./.travis-install-swift.sh
 cache:
