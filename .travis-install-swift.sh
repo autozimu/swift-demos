@@ -7,7 +7,7 @@ if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then
 
     if [[ ! -d "$HOME/.swift/${VERSION}-ubuntu14.04" ]]; then
         pushd ${PWD}
-        mkdir $HOME/.swift
+        mkdir -p $HOME/.swift
         cd $HOME/.swift
         PKG=${VERSION}-ubuntu14.04.tar.gz
         wget https://swift.org/builds/development/ubuntu1404/${VERSION}/${PKG}
