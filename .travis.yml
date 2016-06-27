@@ -1,6 +1,5 @@
 os: linux
 dist: trusty
-sudo: required
 env:
   - SWIFT_VERSION=DEVELOPMENT-SNAPSHOT-2016-06-20-a
 install:
