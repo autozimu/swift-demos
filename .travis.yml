@@ -1,3 +1,6 @@
+os: linux
+dist: trusty
+sudo: required
 install:
   - source ./.travis-install-swift.sh
 script:
