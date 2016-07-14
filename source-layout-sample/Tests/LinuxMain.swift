@@ -1,6 +1,8 @@
 import XCTest
-@testable import FooTestSuite
+import FooTestSuite
 
-XCTMain([
-    testCase(FooTests.allTests),
-])
+var tests = [XCTestCaseEntry]()
+
+tests += FooTestSuite.allTests
+
+XCTMain(tests)
