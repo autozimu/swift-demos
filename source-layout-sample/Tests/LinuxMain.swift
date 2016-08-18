@@ -1,8 +1,8 @@
 import XCTest
-import FooTestSuite
+import FooTests
 
 var tests = [XCTestCaseEntry]()
 
-tests += FooTestSuite.allTests
+tests += FooTests.allTests
 
 XCTMain(tests)
